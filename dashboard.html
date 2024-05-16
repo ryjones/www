@@ -6,255 +6,996 @@ nav_exclude: true
 
 <h1>Dashboard</h1>
 
-<h2>Build status</h2>
-
-<table>
-    <thead>
-        <tr>
-            <th>Project</th>
-            <th>CircleCI</th>
-            <th>AppVeyor</th>
-            <th>TravisCI</th>
-            <th>Github Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs">liboqs</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/liboqs?branch=main" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/liboqs/main?label=main"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://travis-ci.com/github/open-quantum-safe/liboqs" target="_blank"><img src="https://api.travis-ci.com/open-quantum-safe/liboqs.svg"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs/actions" target="_blank"><img src="https://github.com/open-quantum-safe/liboqs/actions/workflows/linux.yml/badge.svg"></a>
-            <a href="https://github.com/open-quantum-safe/liboqs/actions/workflows/weekly.yml" target="_blank"><img src="https://github.com/open-quantum-safe/liboqs/actions/workflows/weekly.yml/badge.svg"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/openssl">OQS-OpenSSL</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/openssl?branch=OQS-OpenSSL_1_1_1-stable" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/openssl/OQS-OpenSSL_1_1_1-stable?label=1.1.1"></td>
-            <td class="text-center"><a href="https://ci.appveyor.com/project/dstebila/openssl" target="_blank"><img src="https://img.shields.io/appveyor/build/dstebila/openssl/OQS-OpenSSL_1_1_1-stable?label=1.1.1"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-provider">oqs-provider</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/oqs-provider?branch=main" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/oqs-provider/main?label=main"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-provider/actions/workflows/linux.yml" target="_blank"><img src="https://github.com/open-quantum-safe/oqs-provider/actions/workflows/linux.yml/badge.svg"></a>
-            <a href="https://github.com/open-quantum-safe/oqs-provider/actions/workflows/macos.yml" target="_blank"><img src="https://github.com/open-quantum-safe/oqs-provider/actions/workflows/macos.yml/badge.svg"></a>
-            <a href="https://github.com/open-quantum-safe/oqs-provider/actions/workflows/windows.yml" target="_blank"><img src="https://github.com/open-quantum-safe/oqs-provider/actions/workflows/windows.yml/badge.svg"></a>
-            <a href="https://github.com/open-quantum-safe/oqs-provider/actions/workflows/standalone.yml" target="_blank"><img src="https://github.com/open-quantum-safe/oqs-provider/actions/workflows/standalone.yml/badge.svg"></a> </td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/boringssl">OQS-BoringSSL</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/boringssl?branch=master" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/boringssl/master?label=master"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/openssh">OQS-OpenSSH</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/openssh?branch=OQS-v8" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/openssh/OQS-v8?label=v8"></a></td>
-            <td class="text-center"><a href="https://ci.appveyor.com/project/dstebila/openssh" target="_blank"><img src="https://img.shields.io/appveyor/build/dstebila/openssh/OQS-v8?label=v8"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-demos">oqs-demos</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/oqs-demos?branch=main" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/oqs-demos/main?label=main"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"> <a href="https://github.com/open-quantum-safe/oqs-demos/actions/workflows/linux.yml" target="_blank"><img src="https://github.com/open-quantum-safe/oqs-demos/actions/workflows/linux.yml/badge.svg"></a> </td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/profiling">profiling</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/profiling?branch=main" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/profiling/main?label=main"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-cpp">liboqs-cpp</a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-cpp/actions?query=workflow%3A"Continuous+integration"" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/open-quantum-safe/liboqs-cpp/cmake.yml"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-dotnet">liboqs-dotnet</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/liboqs-dotnet?branch=master" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/liboqs-dotnet/master?label=master"></a></td>
-            <td class="text-center"><a href="https://ci.appveyor.com/project/dstebila/liboqs-dotnet" target="_blank"><img src="https://img.shields.io/appveyor/build/dstebila/liboqs-dotnet/master?label=master"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-go">liboqs-go</a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-go/actions?query=workflow%3A"Continuous+integration"" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/open-quantum-safe/liboqs-go/go.yml"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-java">liboqs-java</a></td>
-            <td class="text-center"><a href="https://app.circleci.com/pipelines/github/open-quantum-safe/liboqs-java?branch=master" target="_blank"><img src="https://img.shields.io/circleci/build/github/open-quantum-safe/liboqs-java/master?label=master"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-python">liboqs-python</a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-python/actions?query=workflow%3A"Continuous+integration"" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/open-quantum-safe/liboqs-python/python.yml"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-rust">liboqs-rust</a></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-rust/actions?query=workflow%3A"Continuous+integration"" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/open-quantum-safe/liboqs-rust/ci.yml"></a></td>
-        </tr>
-    </tbody>
-</table>
-
-<h2>Development</h2>
-
 <table>
     <thead>
         <tr>
             <th>Project</th>
             <th>Pull requests</th>
             <th>Issues</th>
-            <th>Milestone</th>
             <th>Commits to main</th>
             <th>OpenSSF Scorecard</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="text-center">liboqs</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/liboqs"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/liboqs"></a></td>
-            <td class="text-center">
-                <a href="https://github.com/open-quantum-safe/liboqs/milestone/23" target="_blank"><img src="https://img.shields.io/github/milestones/progress/open-quantum-safe/liboqs/23"></a>
-            </td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/liboqs/main"></a></td>
-            <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/open-quantum-safe/liboqs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/open-quantum-safe/liboqs/badge"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">ci-containers</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/ci-containers/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/ci-containers"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/ci-containers/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/ci-containers"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/ci-containers/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/ci-containers/main"></a></td>
-            <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/open-quantum-safe/ci-containers" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/open-quantum-safe/ci-containers/badge"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">oqs-provider</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-provider/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/oqs-provider"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-provider/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/oqs-provider"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-provider/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/oqs-provider/main"></a></td>
-            <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/open-quantum-safe/oqs-provider" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/open-quantum-safe/oqs-provider/badge"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">liboqs-cpp</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-cpp/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/liboqs-cpp"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-cpp/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/liboqs-cpp"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-cpp/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/liboqs-cpp/main"></a></td>
-            <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/open-quantum-safe/liboqs-cpp" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/open-quantum-safe/liboqs-cpp/badge"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">liboqs-dotnet</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-dotnet/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/liboqs-dotnet"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-dotnet/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/liboqs-dotnet"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-dotnet/commits/master" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/liboqs-dotnet/master"></a></td>
-            <td class="text-center"></td>
-        </tr>
-        <tr>
-            <td class="text-center">liboqs-go</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-go/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/liboqs-go"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-go/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/liboqs-go"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-go/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/liboqs-go/main"></a></td>
-            <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/open-quantum-safe/liboqs-go" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/open-quantum-safe/liboqs-go/badge"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">liboqs-java</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-java/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/liboqs-java"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-java/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/liboqs-java"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-java/commits/master" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/liboqs-java/master"></a></td>
-            <td class="text-center"></td>
-        </tr>
-        <tr>
-            <td class="text-center">liboqs-python</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-python/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/liboqs-python"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-python/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/liboqs-python"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-python/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/liboqs-python/main"></a></td>
-            <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/open-quantum-safe/liboqs-python" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/open-quantum-safe/liboqs-python/badge"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">liboqs-rust</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-rust/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/liboqs-rust"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-rust/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/liboqs-rust"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/liboqs-rust/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/liboqs-rust/main"></a></td>
-            <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/open-quantum-safe/liboqs-rust" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/open-quantum-safe/liboqs-rust/badge"></a></td>
-        </tr>
-    </tbody>
-</table>
-
-<h2>Externals / Tooling</h2>
-
-<table>
-    <thead>
-        <tr>
-            <th>Project</th>
-            <th>Pull requests</th>
-            <th>Issues</th>
-            <th>Milestone</th>
-            <th>Commits to main</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="text-center">oqs-demos</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-demos/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/oqs-demos"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-demos/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/oqs-demos"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/oqs-demos/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/oqs-demos/main"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">profiling</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/profiling/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/profiling"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/profiling/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/profiling"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/profiling/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/profiling/main"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">boringssl</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/boringssl/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/boringssl"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/boringssl/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/boringssl"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/boringssl/commits/master" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/boringssl/master"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">openssh</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/openssh/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/openssh"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/openssh/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/openssh"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/openssh/commits/OQS-v8" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/openssh/OQS-v8"></a></td>
-        </tr>
-        <tr>
-            <td class="text-center">openssl</td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/openssl/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/open-quantum-safe/openssl"></a></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/openssl/issues" target="_blank"><img src="https://img.shields.io/github/issues/open-quantum-safe/openssl"></a></td>
-            <td class="text-center"></td>
-            <td class="text-center"><a href="https://github.com/open-quantum-safe/openssl/commits/OQS-OpenSSL_1_1_1-stable" target="_blank"><img src="https://img.shields.io/github/last-commit/open-quantum-safe/openssl/OQS-OpenSSL_1_1_1-stable"></a></td>
-        </tr>
+       <tr>
+           <td class="text-center">anoncreds-clsignatures-rs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-clsignatures-rs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/anoncreds-clsignatures-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-clsignatures-rs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/anoncreds-clsignatures-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-clsignatures-rs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/anoncreds-clsignatures-rs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/anoncreds-clsignatures-rs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/anoncreds-clsignatures-rs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">anoncreds-methods-registry</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-methods-registry/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/anoncreds-methods-registry"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-methods-registry/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/anoncreds-methods-registry"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-methods-registry/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/anoncreds-methods-registry/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/anoncreds-methods-registry" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/anoncreds-methods-registry/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">anoncreds-revocation</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-revocation/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/anoncreds-revocation"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-revocation/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/anoncreds-revocation"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-revocation/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/anoncreds-revocation/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/anoncreds-revocation" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/anoncreds-revocation/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">anoncreds-rs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-rs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/anoncreds-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-rs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/anoncreds-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-rs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/anoncreds-rs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/anoncreds-rs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/anoncreds-rs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">anoncreds-spec</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-spec/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/anoncreds-spec"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-spec/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/anoncreds-spec"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-spec/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/anoncreds-spec/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/anoncreds-spec" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/anoncreds-spec/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">anoncreds-spec-v2</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-spec-v2/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/anoncreds-spec-v2"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-spec-v2/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/anoncreds-spec-v2"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-spec-v2/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/anoncreds-spec-v2/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/anoncreds-spec-v2" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/anoncreds-spec-v2/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">anoncreds-tex</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-tex/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/anoncreds-tex"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-tex/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/anoncreds-tex"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-tex/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/anoncreds-tex/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/anoncreds-tex" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/anoncreds-tex/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">anoncreds-v2-rs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-v2-rs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/anoncreds-v2-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-v2-rs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/anoncreds-v2-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/anoncreds-v2-rs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/anoncreds-v2-rs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/anoncreds-v2-rs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/anoncreds-v2-rs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-acapy-controllers</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-controllers/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-acapy-controllers"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-controllers/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-acapy-controllers"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-controllers/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-acapy-controllers/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-acapy-controllers" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-acapy-controllers/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-acapy-docs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-docs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-acapy-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-docs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-acapy-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-docs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-acapy-docs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-acapy-docs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-acapy-docs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-acapy-plugins</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-plugins/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-acapy-plugins"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-plugins/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-acapy-plugins"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-plugins/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-acapy-plugins/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-acapy-plugins" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-acapy-plugins/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-acapy-tools</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-tools/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-acapy-tools"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-tools/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-acapy-tools"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-acapy-tools/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-acapy-tools/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-acapy-tools" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-acapy-tools/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-agent-test-harness</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-agent-test-harness/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-agent-test-harness"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-agent-test-harness/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-agent-test-harness"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-agent-test-harness/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-agent-test-harness/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-agent-test-harness" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-agent-test-harness/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-akrida</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-akrida/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-akrida"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-akrida/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-akrida"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-akrida/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-akrida/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-akrida" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-akrida/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-askar</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-askar/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-askar"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-askar/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-askar"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-askar/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-askar/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-askar" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-askar/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-bbs-go</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-bbs-go/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-bbs-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-bbs-go/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-bbs-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-bbs-go/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-bbs-go/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-bbs-go" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-bbs-go/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-bbssignatures-rs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-bbssignatures-rs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-bbssignatures-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-bbssignatures-rs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-bbssignatures-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-bbssignatures-rs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-bbssignatures-rs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-bbssignatures-rs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-bbssignatures-rs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-builder-images</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-builder-images/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-builder-images"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-builder-images/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-builder-images"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-builder-images/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-builder-images/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-builder-images" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-builder-images/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-cloudagent-python</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-cloudagent-python/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-cloudagent-python"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-cloudagent-python/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-cloudagent-python"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-cloudagent-python/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-cloudagent-python/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-cloudagent-python" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-cloudagent-python/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-endorser-service</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-endorser-service/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-endorser-service"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-endorser-service/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-endorser-service"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-endorser-service/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-endorser-service/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-endorser-service" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-endorser-service/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-framework-kotlin</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-framework-kotlin/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-framework-kotlin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-framework-kotlin/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-framework-kotlin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-framework-kotlin/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-framework-kotlin/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-framework-kotlin" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-framework-kotlin/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-framework-swift</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-framework-swift/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-framework-swift"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-framework-swift/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-framework-swift"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-framework-swift/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-framework-swift/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-framework-swift" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-framework-swift/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-mediator-service</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-mediator-service/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-mediator-service"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-mediator-service/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-mediator-service"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-mediator-service/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-mediator-service/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-mediator-service" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-mediator-service/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-rfcs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-rfcs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-rfcs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-rfcs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-rfcs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-rfcs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-rfcs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-rfcs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-rfcs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-socketdock</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-socketdock/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-socketdock"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-socketdock/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-socketdock"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-socketdock/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-socketdock/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-socketdock" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-socketdock/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-staticagent-python</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-staticagent-python/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-staticagent-python"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-staticagent-python/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-staticagent-python"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-staticagent-python/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-staticagent-python/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-staticagent-python" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-staticagent-python/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-uniffi-wrappers</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-uniffi-wrappers/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-uniffi-wrappers"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-uniffi-wrappers/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-uniffi-wrappers"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-uniffi-wrappers/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-uniffi-wrappers/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-uniffi-wrappers" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-uniffi-wrappers/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">aries-vcx</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-vcx/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/aries-vcx"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-vcx/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/aries-vcx"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/aries-vcx/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/aries-vcx/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/aries-vcx" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/aries-vcx/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">besu</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/besu"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/besu"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/besu/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/besu" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/besu/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">besu-docs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-docs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/besu-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-docs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/besu-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-docs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/besu-docs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/besu-docs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/besu-docs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">besu-errorprone-checks</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-errorprone-checks/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/besu-errorprone-checks"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-errorprone-checks/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/besu-errorprone-checks"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-errorprone-checks/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/besu-errorprone-checks/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/besu-errorprone-checks" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/besu-errorprone-checks/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">besu-native</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-native/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/besu-native"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-native/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/besu-native"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-native/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/besu-native/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/besu-native" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/besu-native/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">besu-verkle-trie</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-verkle-trie/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/besu-verkle-trie"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-verkle-trie/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/besu-verkle-trie"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/besu-verkle-trie/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/besu-verkle-trie/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/besu-verkle-trie" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/besu-verkle-trie/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">bevel</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/bevel"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/bevel"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/bevel/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/bevel" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/bevel/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">bevel-operator-fabric</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel-operator-fabric/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/bevel-operator-fabric"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel-operator-fabric/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/bevel-operator-fabric"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel-operator-fabric/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/bevel-operator-fabric/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/bevel-operator-fabric" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/bevel-operator-fabric/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">bevel-samples</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel-samples/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/bevel-samples"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel-samples/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/bevel-samples"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/bevel-samples/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/bevel-samples/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/bevel-samples" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/bevel-samples/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">cacti</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/cacti/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/cacti"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/cacti/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/cacti"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/cacti/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/cacti/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/cacti" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/cacti/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">caliper</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/caliper/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/caliper"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/caliper/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/caliper"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/caliper/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/caliper/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/caliper" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/caliper/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">caliper-benchmarks</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/caliper-benchmarks/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/caliper-benchmarks"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/caliper-benchmarks/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/caliper-benchmarks"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/caliper-benchmarks/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/caliper-benchmarks/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/caliper-benchmarks" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/caliper-benchmarks/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">cello</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/cello/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/cello"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/cello/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/cello"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/cello/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/cello/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/cello" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/cello/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-admin-sdk</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-admin-sdk/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-admin-sdk"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-admin-sdk/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-admin-sdk"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-admin-sdk/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-admin-sdk/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-admin-sdk" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-admin-sdk/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-amcl</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-amcl/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-amcl"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-amcl/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-amcl"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-amcl/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-amcl/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-amcl" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-amcl/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-ca</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-ca/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-ca"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-ca/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-ca"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-ca/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-ca/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-ca" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-ca/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-chaincode-go</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-go/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-chaincode-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-go/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-chaincode-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-go/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-chaincode-go/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-chaincode-go" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-chaincode-go/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-chaincode-java</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-java/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-chaincode-java"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-java/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-chaincode-java"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-java/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-chaincode-java/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-chaincode-java" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-chaincode-java/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-chaincode-node</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-node/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-chaincode-node"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-node/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-chaincode-node"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-chaincode-node/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-chaincode-node/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-chaincode-node" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-chaincode-node/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-cli</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-cli/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-cli"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-cli/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-cli"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-cli/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-cli/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-cli" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-cli/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-config</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-config/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-config"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-config/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-config"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-config/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-config/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-config" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-config/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-contract-api-go</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-contract-api-go/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-contract-api-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-contract-api-go/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-contract-api-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-contract-api-go/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-contract-api-go/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-contract-api-go" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-contract-api-go/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-docs-i18n</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-docs-i18n/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-docs-i18n"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-docs-i18n/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-docs-i18n"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-docs-i18n/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-docs-i18n/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-docs-i18n" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-docs-i18n/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-gateway</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-gateway/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-gateway"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-gateway/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-gateway"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-gateway/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-gateway/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-gateway" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-gateway/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-gateway-java</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-gateway-java/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-gateway-java"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-gateway-java/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-gateway-java"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-gateway-java/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-gateway-java/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-gateway-java" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-gateway-java/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-lib-go</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-lib-go/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-lib-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-lib-go/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-lib-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-lib-go/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-lib-go/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-lib-go" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-lib-go/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-private-chaincode</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-private-chaincode/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-private-chaincode"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-private-chaincode/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-private-chaincode"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-private-chaincode/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-private-chaincode/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-private-chaincode" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-private-chaincode/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-protos</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-protos"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-protos"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-protos/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-protos" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-protos/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-protos-go</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos-go/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-protos-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos-go/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-protos-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos-go/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-protos-go/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-protos-go" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-protos-go/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-protos-go-apiv2</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos-go-apiv2/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-protos-go-apiv2"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos-go-apiv2/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-protos-go-apiv2"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-protos-go-apiv2/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-protos-go-apiv2/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-protos-go-apiv2" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-protos-go-apiv2/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-rfcs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-rfcs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-rfcs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-rfcs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-rfcs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-rfcs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-rfcs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-rfcs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-rfcs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-samples</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-samples/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-samples"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-samples/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-samples"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-samples/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-samples/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-samples" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-samples/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-sdk-go</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-go/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-sdk-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-go/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-sdk-go"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-go/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-sdk-go/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-sdk-go" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-sdk-go/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-sdk-java</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-java/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-sdk-java"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-java/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-sdk-java"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-java/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-sdk-java/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-sdk-java" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-sdk-java/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-sdk-node</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-node/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-sdk-node"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-node/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-sdk-node"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-node/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-sdk-node/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-sdk-node" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-sdk-node/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-sdk-py</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-py/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-sdk-py"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-py/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-sdk-py"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-sdk-py/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-sdk-py/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-sdk-py" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-sdk-py/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">fabric-test</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-test/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/fabric-test"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-test/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/fabric-test"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/fabric-test/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/fabric-test/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric-test" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/fabric-test/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-cli</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-cli/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-cli"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-cli/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-cli"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-cli/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-cli/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-cli" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-cli/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-common</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-common/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-common"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-common/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-common"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-common/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-common/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-common" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-common/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-cordaconnect</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-cordaconnect/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-cordaconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-cordaconnect/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-cordaconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-cordaconnect/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-cordaconnect/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-cordaconnect" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-cordaconnect/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-dataexchange-https</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-dataexchange-https/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-dataexchange-https"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-dataexchange-https/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-dataexchange-https"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-dataexchange-https/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-dataexchange-https/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-dataexchange-https" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-dataexchange-https/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-ethconnect</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-ethconnect/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-ethconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-ethconnect/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-ethconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-ethconnect/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-ethconnect/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-ethconnect" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-ethconnect/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-evmconnect</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-evmconnect/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-evmconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-evmconnect/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-evmconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-evmconnect/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-evmconnect/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-evmconnect" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-evmconnect/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-fabconnect</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-fabconnect/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-fabconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-fabconnect/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-fabconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-fabconnect/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-fabconnect/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-fabconnect" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-fabconnect/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-fir</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-fir/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-fir"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-fir/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-fir"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-fir/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-fir/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-fir" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-fir/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-helm-charts</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-helm-charts/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-helm-charts"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-helm-charts/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-helm-charts"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-helm-charts/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-helm-charts/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-helm-charts" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-helm-charts/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-perf-cli</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-perf-cli/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-perf-cli"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-perf-cli/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-perf-cli"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-perf-cli/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-perf-cli/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-perf-cli" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-perf-cli/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-samples</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-samples/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-samples"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-samples/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-samples"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-samples/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-samples/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-samples" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-samples/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-sandbox</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-sandbox/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-sandbox"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-sandbox/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-sandbox"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-sandbox/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-sandbox/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-sandbox" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-sandbox/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-sdk-nodejs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-sdk-nodejs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-sdk-nodejs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-sdk-nodejs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-sdk-nodejs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-sdk-nodejs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-sdk-nodejs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-sdk-nodejs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-sdk-nodejs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-signer</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-signer/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-signer"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-signer/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-signer"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-signer/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-signer/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-signer" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-signer/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-tezosconnect</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tezosconnect/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-tezosconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tezosconnect/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-tezosconnect"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tezosconnect/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-tezosconnect/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-tezosconnect" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-tezosconnect/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-tokens-erc1155</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tokens-erc1155/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-tokens-erc1155"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tokens-erc1155/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-tokens-erc1155"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tokens-erc1155/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-tokens-erc1155/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-tokens-erc1155" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-tokens-erc1155/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-tokens-erc20-erc721</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tokens-erc20-erc721/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-tokens-erc20-erc721"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tokens-erc20-erc721/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-tokens-erc20-erc721"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-tokens-erc20-erc721/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-tokens-erc20-erc721/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-tokens-erc20-erc721" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-tokens-erc20-erc721/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-transaction-manager</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-transaction-manager/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-transaction-manager"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-transaction-manager/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-transaction-manager"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-transaction-manager/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-transaction-manager/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-transaction-manager" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-transaction-manager/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">firefly-ui</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-ui/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/firefly-ui"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-ui/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/firefly-ui"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/firefly-ui/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/firefly-ui/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/firefly-ui" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/firefly-ui/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">governance</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/governance/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/governance"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/governance/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/governance"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/governance/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/governance/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/governance" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/governance/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">homebrew-besu</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/homebrew-besu/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/homebrew-besu"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/homebrew-besu/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/homebrew-besu"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/homebrew-besu/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/homebrew-besu/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/homebrew-besu" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/homebrew-besu/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">homebrew-solang</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/homebrew-solang/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/homebrew-solang"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/homebrew-solang/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/homebrew-solang"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/homebrew-solang/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/homebrew-solang/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/homebrew-solang" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/homebrew-solang/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">hyperledger-hip</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger-hip/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/hyperledger-hip"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger-hip/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/hyperledger-hip"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger-hip/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/hyperledger-hip/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/hyperledger-hip" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/hyperledger-hip/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">hyperledger.dev</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger.dev/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/hyperledger.dev"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger.dev/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/hyperledger.dev"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger.dev/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/hyperledger.dev/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/hyperledger.dev" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/hyperledger.dev/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">hyperledger.github.io</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger.github.io/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/hyperledger.github.io"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger.github.io/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/hyperledger.github.io"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/hyperledger.github.io/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/hyperledger.github.io/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/hyperledger.github.io" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/hyperledger.github.io/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">identus</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/identus/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/identus"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/identus/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/identus"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/identus/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/identus/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/identus" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/identus/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">identus-cloud-agent</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/identus-cloud-agent/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/identus-cloud-agent"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/identus-cloud-agent/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/identus-cloud-agent"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/identus-cloud-agent/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/identus-cloud-agent/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/identus-cloud-agent" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/identus-cloud-agent/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-besu</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-besu/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-besu"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-besu/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-besu"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-besu/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-besu/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-besu" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-besu/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-bls-wrapper-python</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-bls-wrapper-python/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-bls-wrapper-python"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-bls-wrapper-python/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-bls-wrapper-python"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-bls-wrapper-python/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-bls-wrapper-python/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-bls-wrapper-python" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-bls-wrapper-python/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-blssignatures-rs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-blssignatures-rs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-blssignatures-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-blssignatures-rs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-blssignatures-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-blssignatures-rs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-blssignatures-rs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-blssignatures-rs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-blssignatures-rs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-cli-rs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-cli-rs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-cli-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-cli-rs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-cli-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-cli-rs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-cli-rs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-cli-rs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-cli-rs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-did-method</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-did-method/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-did-method"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-did-method/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-did-method"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-did-method/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-did-method/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-did-method" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-did-method/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-did-networks</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-did-networks/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-did-networks"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-did-networks/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-did-networks"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-did-networks/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-did-networks/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-did-networks" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-did-networks/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-docs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-docs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-docs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-docs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-docs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-docs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-docs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-hipe</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-hipe/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-hipe"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-hipe/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-hipe"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-hipe/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-hipe/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-hipe" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-hipe/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-node</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-node"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-node"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-node/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-node" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-node/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-node-container</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node-container/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-node-container"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node-container/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-node-container"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node-container/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-node-container/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-node-container" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-node-container/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-node-monitor</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node-monitor/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-node-monitor"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node-monitor/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-node-monitor"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-node-monitor/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-node-monitor/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-node-monitor" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-node-monitor/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-plenum</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-plenum/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-plenum"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-plenum/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-plenum"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-plenum/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-plenum/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-plenum" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-plenum/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-shared-gha</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-shared-gha/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-shared-gha"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-shared-gha/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-shared-gha"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-shared-gha/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-shared-gha/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-shared-gha" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-shared-gha/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-shared-rs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-shared-rs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-shared-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-shared-rs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-shared-rs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-shared-rs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-shared-rs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-shared-rs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-shared-rs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-test-automation</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-test-automation/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-test-automation"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-test-automation/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-test-automation"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-test-automation/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-test-automation/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-test-automation" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-test-automation/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">indy-vdr</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-vdr/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/indy-vdr"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-vdr/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/indy-vdr"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/indy-vdr/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/indy-vdr/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/indy-vdr" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/indy-vdr/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-2-docs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-2-docs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-2-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-2-docs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-2-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-2-docs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-2-docs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-2-docs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-2-docs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-2-examples</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-2-examples/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-2-examples"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-2-examples/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-2-examples"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-2-examples/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-2-examples/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-2-examples" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-2-examples/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-deploy</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-deploy/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-deploy"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-deploy/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-deploy"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-deploy/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-deploy/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-deploy" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-deploy/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-ed25519</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-ed25519/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-ed25519"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-ed25519/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-ed25519"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-ed25519/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-ed25519/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-ed25519" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-ed25519/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-ios</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-ios/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-ios"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-ios/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-ios"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-ios/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-ios/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-ios" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-ios/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-java</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-java/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-java"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-java/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-java"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-java/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-java/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-java" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-java/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-javascript</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-javascript/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-javascript"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-javascript/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-javascript"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-javascript/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-javascript/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-javascript" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-javascript/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-news</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-news/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-news"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-news/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-news"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-news/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-news/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-news" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-news/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-python</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-python/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-python"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-python/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-python"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-python/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-python/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-python" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-python/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">iroha-rfcs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-rfcs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/iroha-rfcs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-rfcs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/iroha-rfcs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/iroha-rfcs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/iroha-rfcs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/iroha-rfcs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/iroha-rfcs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">solang</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/solang"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/solang"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/solang/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/solang" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/solang/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">solang-aqd</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-aqd/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/solang-aqd"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-aqd/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/solang-aqd"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-aqd/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/solang-aqd/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/solang-aqd" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/solang-aqd/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">solang-llvm</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-llvm/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/solang-llvm"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-llvm/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/solang-llvm"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-llvm/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/solang-llvm/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/solang-llvm" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/solang-llvm/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">solang-substrate-ci</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-substrate-ci/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/solang-substrate-ci"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-substrate-ci/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/solang-substrate-ci"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/solang-substrate-ci/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/solang-substrate-ci/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/solang-substrate-ci" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/solang-substrate-ci/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">toc</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/toc/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/toc"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/toc/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/toc"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/toc/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/toc/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/toc" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/toc/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">toc-docs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/toc-docs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/toc-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/toc-docs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/toc-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/toc-docs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/toc-docs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/toc-docs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/toc-docs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-build-tools</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-build-tools/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-build-tools"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-build-tools/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-build-tools"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-build-tools/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-build-tools/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-build-tools" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-build-tools/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-cli</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-cli/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-cli"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-cli/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-cli"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-cli/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-cli/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-cli" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-cli/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-docs</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-docs/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-docs/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-docs"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-docs/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-docs/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-docs" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-docs/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-evm</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-evm/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-evm"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-evm/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-evm"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-evm/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-evm/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-evm" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-evm/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-gradle-plugin</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-gradle-plugin/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-gradle-plugin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-gradle-plugin/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-gradle-plugin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-gradle-plugin/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-gradle-plugin/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-gradle-plugin" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-gradle-plugin/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-installer</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-installer/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-installer"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-installer/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-installer"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-installer/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-installer/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-installer" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-installer/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-maven-plugin</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-maven-plugin/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-maven-plugin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-maven-plugin/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-maven-plugin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-maven-plugin/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-maven-plugin/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-maven-plugin" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-maven-plugin/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-openapi</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-openapi/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-openapi"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-openapi/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-openapi"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-openapi/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-openapi/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-openapi" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-openapi/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-openapi-gradle-plugin</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-openapi-gradle-plugin/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-openapi-gradle-plugin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-openapi-gradle-plugin/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-openapi-gradle-plugin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-openapi-gradle-plugin/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-openapi-gradle-plugin/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-openapi-gradle-plugin" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-openapi-gradle-plugin/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-sokt</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-sokt/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-sokt"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-sokt/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-sokt"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-sokt/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-sokt/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-sokt" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-sokt/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-solidity-gradle-plugin</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-solidity-gradle-plugin/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-solidity-gradle-plugin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-solidity-gradle-plugin/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-solidity-gradle-plugin"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-solidity-gradle-plugin/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-solidity-gradle-plugin/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-solidity-gradle-plugin" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-solidity-gradle-plugin/badge"></a></td>
+       </tr>
+       <tr>
+           <td class="text-center">web3j-unit</td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-unit/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/hyperledger/web3j-unit"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-unit/issues" target="_blank"><img src="https://img.shields.io/github/issues/hyperledger/web3j-unit"></a></td>
+           <td class="text-center"><a href="https://github.com/hyperledger/web3j-unit/commits/main" target="_blank"><img src="https://img.shields.io/github/last-commit/hyperledger/web3j-unit/main"></a></td>
+           <td class="text-center"><a href="https://scorecard.dev/viewer/?uri=github.com/hyperledger/web3j-unit" target="_blank"><img src="https://api.scorecard.dev/projects/github.com/hyperledger/web3j-unit/badge"></a></td>
+       </tr>
     </tbody>
 </table>
